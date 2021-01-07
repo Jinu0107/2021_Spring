@@ -18,4 +18,15 @@ public class BoardServiceImpl implements BoardService {
     public List<BoardDto> getList() {
         return boardDao.getList();
     }
+
+	@Override
+	public void insert(BoardDto dto) {
+		boardDao.insert(dto);
+	}
+
+	@Override
+	public BoardDto getView(String id) {
+		// TODO Auto-generated method stub
+		return boardDao.getView(id);
+	}
 }
