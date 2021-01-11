@@ -10,13 +10,15 @@
 	<typeAliases>
 		<typeAlias alias="BoardDto"
 			type="com.mycompany.myhome.board.BoardDto" />
+		<typeAlias alias="FreeBoardDto"
+			type="com.mycompany.myhome.freeboard.FreeboardDto" />
 	</typeAliases>
 
-	
+
 	<!-- 쿼리를 xml 형태로 만들어서 제공한다. -->
 	<mappers>
 		<mapper resource="/com/mycompany/myhome/mapper/Board.xml" />
-
+		<mapper resource="/com/mycompany/myhome/mapper/FreeBoard.xml" />
 	</mappers>
 
 </configuration>
