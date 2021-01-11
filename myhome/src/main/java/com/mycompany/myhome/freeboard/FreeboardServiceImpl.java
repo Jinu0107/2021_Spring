@@ -28,4 +28,9 @@ public class FreeboardServiceImpl implements FreeboardService {
 		return dao.getView(id);
 	}
 
+	@Override
+	public int getTotalCount(FreeboardDto dto) {
+		return dao.getTotalCount(dto);
+	}
+
 }

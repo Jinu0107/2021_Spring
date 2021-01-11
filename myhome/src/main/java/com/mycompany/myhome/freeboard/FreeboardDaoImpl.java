@@ -29,4 +29,9 @@ public class FreeboardDaoImpl implements FreeboardDao {
 		return sm.selectOne("FreeBoard_view", id);
 	}
 
+	@Override
+	public int getTotalCount(FreeboardDto dto) {
+		return sm.selectOne("FreeBoard_getTotal", dto);
+	}
+
 }

@@ -6,4 +6,5 @@ public interface FreeboardService {
 	List<FreeboardDto> getList(FreeboardDto dto);
 	void insert(FreeboardDto dto);
 	FreeboardDto getView(String id);
+	int getTotalCount(FreeboardDto dto);
 }
